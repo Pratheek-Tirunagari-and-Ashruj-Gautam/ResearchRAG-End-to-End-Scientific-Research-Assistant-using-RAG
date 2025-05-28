@@ -9,6 +9,9 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ## 🌐 Demo 
 
+[![Watch the Demo](https://raw.githubusercontent.com/Pratheek-Tirunagari-and-Ashruj-Gautam/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG/main/demo_thumbnail.png)](https://github.com/Pratheek-Tirunagari-and-Ashruj-Gautam/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG/raw/main/demo.mp4)
+
+
 ---
 
 ## ⚖️ Features
