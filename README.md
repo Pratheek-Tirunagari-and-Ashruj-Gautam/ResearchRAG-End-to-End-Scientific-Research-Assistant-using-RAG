@@ -7,13 +7,6 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 
 #### Pratheek Tirunagari
 
-##  Demo 
-
-
-
-
-https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
-
 
 ##  Features
 - Scientific PDF parsing with section/figure/reference extraction  
@@ -119,7 +112,12 @@ https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
 
 ---
 
-##  UI Demo 
+##  Demo 
+
+
+
+
+https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
 
 - Launch the Streamlit app via `streamlit run app.py`  
 - Paste the path to the PDF , ask a question, see the result
