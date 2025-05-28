@@ -87,6 +87,9 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 ### Step 9: Output
 - **In:** `pipeline_runner.py`  
 - Answer sent to `stdout` as: `LLM Answer: ...`
+## 🧠 Architecture Diagram
+![Flow Diagram](https://raw.githubusercontent.com/Pratheek-Tirunagari-and-Ashruj-Gautam/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG/main/flow.png)
+
 
 ---
 
