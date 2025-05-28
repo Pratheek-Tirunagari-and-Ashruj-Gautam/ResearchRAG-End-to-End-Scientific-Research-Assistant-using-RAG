@@ -3,9 +3,9 @@
 A modular and extensible Retrieval-Augmented Generation (RAG) architecture designed for automated scientific document comprehension and domain-specific question answering. The pipeline integrates hierarchical PDF decomposition, fine-grained entity and relation extraction, citation graph analytics, semantically-aware vector retrieval via hybrid embedding strategies, and local LLM-driven response synthesis, enabling end-to-end reasoning over scholarly corpora.
 
 ##  Authors
-##### Ashruj Gautam
+#### Ashruj Gautam
 
-##### Pratheek Tirunagari
+#### Pratheek Tirunagari
 
 ##  Demo 
 
