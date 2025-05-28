@@ -168,19 +168,16 @@ python app.py
 [https://arxiv.org/]
 
 ### 📉 Performance (F1 Scores)
-Task	F1 Score
-Section Classification	79.94%
-Reference Parsing	99.54%
+
+| Task                   | F1 Score |
+|------------------------|----------|
+| Section Classification | 79.94%   |
+| Reference Parsing      | 99.54%   |
 
 ### ✨ Acknowledgments
-Grobid: for metadata parsing
 
-Hugging Face: for pretrained scientific models
+- **Grobid**: for metadata parsing  
+- **Hugging Face**: for pretrained scientific models  
+- **ChromaDB**: for open-source vector DB  
+- **Mistral**: local LLM inference (GGUF)
 
-ChromaDB: for open-source vector DB
-
-Mistral: local LLM inference (GGUF)
-
-python
-Copy
-Edit
