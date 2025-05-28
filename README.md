@@ -161,7 +161,7 @@ llama-cpp-python for local LLM execution
 - **PubLayNet**: Used for training our LayoutLM model for accurate figure detection in scientific PDFs.
 - **arXiv Papers**: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
 
-##📉 Performance
+## 📉 Performance
 Task	Accuracy	F1
 Section Classification	79.94%	
 Reference Parsing	99.54%	
