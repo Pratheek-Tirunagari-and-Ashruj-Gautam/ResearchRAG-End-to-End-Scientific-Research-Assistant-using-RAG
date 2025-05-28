@@ -1,6 +1,6 @@
 #  ResearchRAG: End-to-End Scientific Research Assistant using RAG & LLMs
 
-An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific document understanding and question answering. Built with modular components for PDF parsing, entity extraction, citation analysis, semantic retrieval, and response generation via local LLMs.
+A modular and extensible Retrieval-Augmented Generation (RAG) architecture designed for automated scientific document comprehension and domain-specific question answering. The pipeline integrates hierarchical PDF decomposition, fine-grained entity and relation extraction, citation graph analytics, semantically-aware vector retrieval via hybrid embedding strategies, and local LLM-driven response synthesis, enabling end-to-end reasoning over scholarly corpora.
 
 ##  Authors
 ### Ashruj Gautam
