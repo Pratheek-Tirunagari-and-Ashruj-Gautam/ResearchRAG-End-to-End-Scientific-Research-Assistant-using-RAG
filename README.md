@@ -9,7 +9,11 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ## 🌐 Demo 
 
-[![Watch the Demo](https://img.shields.io/badge/Demo-Click%20to%20Watch-red)](https://raw.githubusercontent.com/Pratheek-Tirunagari-and-Ashruj-Gautam/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG/main/demo.mp4)
+
+
+
+https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
+
 
 ## ⚖️ Features
 - Scientific PDF parsing with section/figure/reference extraction  
