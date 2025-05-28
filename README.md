@@ -154,6 +154,12 @@ Fine-tuned BERT for section classification
 Streamlit for interactive frontend
 
 llama-cpp-python for local LLM execution
+## 📦 Datasets Used
+
+- **CORD-19**: Used for testing end-to-end scientific PDF parsing and question answering.
+- **S2ORC (5K subset)**: Used to fine-tune our section classification model and evaluate semantic embedding quality.
+- **PubLayNet**: Used for training our LayoutLM model for accurate figure detection in scientific PDFs.
+- **arXiv Papers**: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
 
 📉 Performance
 Task	Accuracy	F1
