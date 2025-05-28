@@ -123,19 +123,28 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ```bash
 # Clone the repo
-$ git clone https://github.com/<your-org>/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG
+git clone https://github.com/<your-org>/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG
 
 # Navigate into the project
-$ cd ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG
+cd ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG
 
 # Create virtual environment
-$ python -m venv LOLvenv && source LOLvenv/bin/activate
+python -m venv LOLvenv && source LOLvenv/bin/activate  # for Linux/macOS
+# OR for Windows:
+python -m venv LOLvenv && LOLvenv\Scripts\activate
 
 # Install dependencies
-(LOLvenv) $ pip install -r requirements.txt
+pip install -r requirements.txt
+
+# Download LLM model (Mistral 7B GGUF)
+# Save it inside: models/llm_gguf/
+# File: mistral-7b-instruct-v0.1.Q4_K_M.gguf
+
+# Run GROBID container (required for metadata extraction)
+docker run -t --rm -p 8070:8070 lfoppiano/grobid:latest
 
 # Run the main app
-(LOLvenv) $ python app.py
+python app.py
 ```
 🚀 Tech Stack
 Python 3.10+
