@@ -165,10 +165,9 @@ llama-cpp-python for local LLM execution
 ## 📦 Datasets Used
 
 - **CORD-19**: Used for testing end-to-end scientific PDF parsing and question answering.([https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge])
-- **S2ORC (5K subset)**: Used to fine-tune our section classification model and evaluate semantic embedding quality.
-- **PubLayNet**: Used for training our LayoutLM model for accurate figure detection in scientific PDFs.
-- **arXiv Papers**: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
-
+- **S2ORC (5K subset)**: Used to fine-tune our section classification model and evaluate semantic embedding quality.([https://huggingface.co/datasets/sentence-transformers/s2orc])
+- **PubLayNet**: Used for training our LayoutLM model for accurate figure detection in scientific PDFs.([https://paperswithcode.com/dataset/publaynet])
+- **arXiv Papers**: Sampled for testing document expansion, similarity ranking, and citation graph analysis.([https://arxiv.org/])
 ## 📉 Performance
 Task	Accuracy	F1
 Section Classification	79.94%	
