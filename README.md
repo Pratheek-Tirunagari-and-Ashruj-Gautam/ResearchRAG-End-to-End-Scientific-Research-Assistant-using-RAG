@@ -115,7 +115,7 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 ## 🎨 UI Demo 
 
 - Launch the Streamlit app via `streamlit run app.py`  
-- Paste a PDF, ask a question, see the result
+- Paste the path to the PDF , ask a question, see the result
 
 ---
 
