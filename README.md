@@ -2,9 +2,9 @@
 
 An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific document understanding and question answering. Built with modular components for PDF parsing, entity extraction, citation analysis, semantic retrieval, and response generation via local LLMs.
 ## ✍️ Authors
-# Ashruj Gautam
+### Ashruj Gautam
 
-# Pratheek Tirunagari
+### Pratheek Tirunagari
 
 > 📚 **Run the pipeline with just one file:** `app.py`  
 > This triggers `pipeline_runner.py`, which internally coordinates all steps across modules.
