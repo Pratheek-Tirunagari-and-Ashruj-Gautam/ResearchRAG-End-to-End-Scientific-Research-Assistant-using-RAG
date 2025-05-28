@@ -31,7 +31,7 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 - **Function:** `parse_pdf` (`pdf_to_document.py`)  
 - Uses Grobid for metadata, tokenizes content, and prepares chunks
 
-### Step 1.5: Scientific NLP Enrichment
+#### Step 1.5: Scientific NLP Enrichment
 - **Entity Extractor:** `ScientificEntityExtractor`  
 - **Relation Extractor:** `PatternRelationExtractor`  
 - **Claim Extractor:** `ScientificClaimDetector`  
