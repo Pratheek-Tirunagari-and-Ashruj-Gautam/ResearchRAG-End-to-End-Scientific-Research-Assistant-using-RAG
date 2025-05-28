@@ -7,7 +7,7 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ---
 
-## 🌐 Demo (Add GIF/video here)
+## 🌐 Demo 
 
 
 ---
@@ -29,7 +29,7 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ### Step 1: PDF Parsing
 - **Function:** `parse_pdf` (`pdf_to_document.py`)  
-- Uses Grobid for metadata, tokenizes content, prepares chunks
+- Uses Grobid for metadata, tokenizes content, and prepares chunks
 
 ### Step 1.5: Scientific NLP Enrichment
 - **Entity Extractor:** `ScientificEntityExtractor`  
@@ -51,7 +51,7 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ### Step 3: Section Scoring
 - **Function:** `score_sections`  
-- Based on citation count, recency, word count
+- Based on citation count, recency, and word count
 
 ### Step 4: Section Summarization
 - **Function:** `summarize_sections`  
@@ -75,7 +75,7 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ### Step 6: Embedding & Retrieval
 - **Classes:** `ScientificEmbedding`, `Retriever`  
-- Retrieve top-k relevant chunks from ChromaDB using hybrid search
+- Retrieve top-k relevant chunks from ChromaDB using a hybrid search
 
 ### Step 7: Context Building
 - **Class:** `ContextBuilder`  
@@ -137,6 +137,7 @@ $ python -m venv LOLvenv && source LOLvenv/bin/activate
 
 # Run the main app
 (LOLvenv) $ python app.py
+```
 🚀 Tech Stack
 Python 3.10+
 
@@ -172,4 +173,4 @@ Hugging Face: for pretrained scientific models
 ChromaDB: for open-source vector DB
 
 Mistral: local LLM inference (GGUF)
-```
+
