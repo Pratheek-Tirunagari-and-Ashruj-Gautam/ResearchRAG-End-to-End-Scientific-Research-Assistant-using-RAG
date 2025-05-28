@@ -18,6 +18,8 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 - Embedding & hybrid retrieval with ChromaDB  
 - Prompt construction and budgeted context building  
 - Final LLM answer generation via local Mistral (GGUF format)
+- Achieved F1 score of 99.54% while transfer learning the Reference Parsing model.
+- Achieved F1 score of 79.94% while transfer learning the Section Classification model.
 
 
 
