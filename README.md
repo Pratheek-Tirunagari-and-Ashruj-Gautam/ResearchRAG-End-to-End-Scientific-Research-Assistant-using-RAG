@@ -148,31 +148,31 @@ python app.py
 
 ```
 🧠 Model Fine-Tuning (Transfer Learning)
-LayoutLM for Figure Detection:
-We fine-tuned a LayoutLMv1 model on the PubLayNet dataset to detect figure captions and their bounding boxes in scientific PDFs, enabling layout-aware chunking of figure content.
+### LayoutLM for Figure Detection:
+#### We fine-tuned a LayoutLMv1 model on the PubLayNet dataset to detect figure captions and their bounding boxes in scientific PDFs, enabling layout-aware chunking of figure content.
 
-BERT for Section Classification:
-A BERT base model was fine-tuned on a 5K subset of S2ORC for scientific section classification (Introduction, Methods, Results, etc.). This significantly improved accuracy over rule-based or zero-shot methods.
+### BERT for Section Classification:
+#### A BERT base model was fine-tuned on a 5K subset of S2ORC for scientific section classification (Introduction, Methods, Results, etc.). This significantly improved accuracy over rule-based or zero-shot methods.
 
-📦 Datasets Used
-CORD-19: Used for testing end-to-end scientific PDF parsing and question answering.
+### 📦 Datasets Used
+#### CORD-19: Used for testing end-to-end scientific PDF parsing and question answering.
 [https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge]
 
-S2ORC (5K subset): Used to fine-tune our section classification model and evaluate semantic embedding quality.
+##### S2ORC (5K subset): Used to fine-tune our section classification model and evaluate semantic embedding quality.
 [https://huggingface.co/datasets/sentence-transformers/s2orc]
 
-PubLayNet: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.
+##### PubLayNet: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.
 [https://paperswithcode.com/dataset/publaynet]
 
-arXiv Papers: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
+#### arXiv Papers: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
 [https://arxiv.org/]
 
-📉 Performance (F1 Scores)
+### 📉 Performance (F1 Scores)
 Task	F1 Score
 Section Classification	79.94%
 Reference Parsing	99.54%
 
-✨ Acknowledgments
+### ✨ Acknowledgments
 Grobid: for metadata parsing
 
 Hugging Face: for pretrained scientific models
