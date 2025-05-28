@@ -9,7 +9,6 @@
 
 A modular and extensible Retrieval-Augmented Generation (RAG) architecture designed for automated scientific document comprehension and domain-specific question answering. The pipeline integrates hierarchical PDF decomposition, fine-grained entity and relation extraction, citation graph analytics, semantically-aware vector retrieval via hybrid embedding strategies, and local LLM-driven response synthesis, enabling end-to-end reasoning over scholarly corpora.
 
-
 ##  Features
 - Scientific PDF parsing with section/figure/reference extraction  
 - Named entity, relation & claim detection using spaCy & SciSpacy  
@@ -23,15 +22,13 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 - Achieved F1 score of 0.9954 while transfer learning the Reference Parsing model.
 - Achieved F1 score of 0.7994 while transfer learning the Section Classification model.
 
-
-
 ##  Pipeline Overview (Step-by-Step)
 
 ### Step 1: PDF Parsing
 - **Function:** `parse_pdf` (`pdf_to_document.py`)  
 - Uses Grobid for metadata, tokenizes content, and prepares chunks
 
-#### Step 1.5: Scientific NLP Enrichment
+### Step 1.5: Scientific NLP Enrichment
 - **Entity Extractor:** `ScientificEntityExtractor`  
 - **Relation Extractor:** `PatternRelationExtractor`  
 - **Claim Extractor:** `ScientificClaimDetector`  
@@ -88,9 +85,9 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 ### Step 9: Output
 - **In:** `pipeline_runner.py`  
 - Answer sent to `stdout` as: `LLM Answer: ...`
+
 ##  Architecture Diagram
 ![Flow Diagram](https://raw.githubusercontent.com/Pratheek-Tirunagari-and-Ashruj-Gautam/ResearchRAG-End-to-End-Scientific-Research-Assistant-using-RAG/main/flow.png)
-
 
 ---
 
@@ -116,10 +113,7 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 
 ---
 
-##  Demo 
-
-
-
+##  Demo
 
 https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
 
@@ -154,39 +148,40 @@ docker run -t --rm -p 8070:8070 lfoppiano/grobid:latest
 
 # Run the main app
 python app.py
-
 ```
- Model Fine-Tuning (Transfer Learning)
+
+##  Model Fine-Tuning (Transfer Learning)
+
 ### LayoutLM for Figure Detection:
-#### We fine-tuned a LayoutLMv1 model on the PubLayNet dataset to detect figure captions and their bounding boxes in scientific PDFs, enabling layout-aware chunking of figure content.
+We fine-tuned a LayoutLMv1 model on the PubLayNet dataset to detect figure captions and their bounding boxes in scientific PDFs, enabling layout-aware chunking of figure content.
 
 ### BERT for Section Classification:
-#### A BERT base model was fine-tuned on a 5K subset of S2ORC for scientific section classification (Introduction, Methods, Results, etc.). This significantly improved accuracy over rule-based or zero-shot methods.
+A BERT base model was fine-tuned on a 5K subset of S2ORC for scientific section classification (Introduction, Methods, Results, etc.). This significantly improved accuracy over rule-based or zero-shot methods.
 
-###  Datasets Used
+##  Datasets Used
+
 #### CORD-19: Used for testing end-to-end scientific PDF parsing and question answering.
 [https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge]
 
-##### S2ORC (5K subset): Used to fine-tune our section classification model and evaluate semantic embedding quality.
+#### S2ORC (5K subset): Used to fine-tune our section classification model and evaluate semantic embedding quality.
 [https://huggingface.co/datasets/sentence-transformers/s2orc]
 
-##### PubLayNet: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.
+#### PubLayNet: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.
 [https://paperswithcode.com/dataset/publaynet]
 
 #### arXiv Papers: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
 [https://arxiv.org/]
 
-###  Performance (F1 Scores)
+##  Performance (F1 Scores)
 
 | Task                   | F1 Score |
 |------------------------|----------|
 | Section Classification | 79.94%   |
 | Reference Parsing      | 99.54%   |
 
-###  Acknowledgments
+##  Acknowledgments
 
 - **Grobid**: for metadata parsing  
 - **Hugging Face**: for pretrained scientific models  
 - **ChromaDB**: for open-source vector DB  
 - **Mistral**: local LLM inference (GGUF)
-
