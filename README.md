@@ -1,13 +1,13 @@
 # 🌍 ResearchRAG: End-to-End Scientific Research Assistant using RAG & LLMs
 
 An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific document understanding and question answering. Built with modular components for PDF parsing, entity extraction, citation analysis, semantic retrieval, and response generation via local LLMs.
+
 ## ✍️ Authors
 ### Ashruj Gautam
 
 ### Pratheek Tirunagari
 
 ## 🌐 Demo 
-
 
 ---
 
@@ -145,33 +145,32 @@ docker run -t --rm -p 8070:8070 lfoppiano/grobid:latest
 
 # Run the main app
 python app.py
+
 ```
-🚀 Tech Stack
-Python 3.10+
+🧠 Model Fine-Tuning (Transfer Learning)
+LayoutLM for Figure Detection:
+We fine-tuned a LayoutLMv1 model on the PubLayNet dataset to detect figure captions and their bounding boxes in scientific PDFs, enabling layout-aware chunking of figure content.
 
-LangChain-style modular architecture
+BERT for Section Classification:
+A BERT base model was fine-tuned on a 5K subset of S2ORC for scientific section classification (Introduction, Methods, Results, etc.). This significantly improved accuracy over rule-based or zero-shot methods.
 
-ChromaDB for vector storage
+📦 Datasets Used
+CORD-19: Used for testing end-to-end scientific PDF parsing and question answering.
+[https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge]
 
-Sentence Transformers (MiniLM)
+S2ORC (5K subset): Used to fine-tune our section classification model and evaluate semantic embedding quality.
+[https://huggingface.co/datasets/sentence-transformers/s2orc]
 
-LayoutLMv1 for figure detection
+PubLayNet: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.
+[https://paperswithcode.com/dataset/publaynet]
 
-Fine-tuned BERT for section classification
+arXiv Papers: Sampled for testing document expansion, similarity ranking, and citation graph analysis.
+[https://arxiv.org/]
 
-Streamlit for interactive frontend
-
-llama-cpp-python for local LLM execution
-## 📦 Datasets Used
-
-- **CORD-19**: Used for testing end-to-end scientific PDF parsing and question answering.[https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge]
-- **S2ORC (5K subset)**: Used to fine-tune our section classification model and evaluate semantic embedding quality.[https://huggingface.co/datasets/sentence-transformers/s2orc]
-- **PubLayNet**: Utilized for training our LayoutLM model to achieve accurate figure detection in scientific PDFs.[https://paperswithcode.com/dataset/publaynet]
-- **arXiv Papers**: Sampled for testing document expansion, similarity ranking, and citation graph analysis.[https://arxiv.org/]
-## 📉 Performance
-Task	Accuracy	-F1 score 
-####Section Classification	79.94%	
-####Reference Parsing	99.54%	
+📉 Performance (F1 Scores)
+Task	F1 Score
+Section Classification	79.94%
+Reference Parsing	99.54%
 
 ✨ Acknowledgments
 Grobid: for metadata parsing
@@ -182,3 +181,6 @@ ChromaDB: for open-source vector DB
 
 Mistral: local LLM inference (GGUF)
 
+python
+Copy
+Edit
