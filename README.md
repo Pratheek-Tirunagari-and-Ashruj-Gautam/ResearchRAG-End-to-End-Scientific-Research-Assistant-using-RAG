@@ -6,6 +6,8 @@ An advanced Retrieval-Augmented Generation (RAG) pipeline for scientific documen
 
 ### Pratheek Tirunagari
 
+
+
 > 📚 **Run the pipeline with just one file:** `app.py`  
 > This triggers `pipeline_runner.py`, which internally coordinates all steps across modules.
 
