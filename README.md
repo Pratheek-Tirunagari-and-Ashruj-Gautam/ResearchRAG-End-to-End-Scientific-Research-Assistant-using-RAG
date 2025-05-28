@@ -19,7 +19,7 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 - Prompt construction and budgeted context building  
 - Final LLM answer generation via local Mistral (GGUF format)
 
----
+
 
 ##  Pipeline Overview (Step-by-Step)
 
