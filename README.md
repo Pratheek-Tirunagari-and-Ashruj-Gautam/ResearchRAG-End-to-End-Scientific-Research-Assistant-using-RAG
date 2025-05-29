@@ -115,7 +115,11 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 
 ##  Demo
 
-https://github.com/user-attachments/assets/adfb150d-d0e4-4d9f-9a38-262daa0827e3
+https://github.com/user-attachments/assets/7366bfa6-a27e-4174-afdf-cacdd6903c30
+
+
+
+
 
 - Launch the Streamlit app via `streamlit run app.py`  
 - Paste the path to the PDF , ask a question, see the result
