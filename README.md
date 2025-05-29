@@ -113,11 +113,13 @@ A modular and extensible Retrieval-Augmented Generation (RAG) architecture desig
 
 ---
 
+
+
+
 ##  Demo
 
-https://github.com/user-attachments/assets/7366bfa6-a27e-4174-afdf-cacdd6903c30
 
-
+https://github.com/user-attachments/assets/7e6f60eb-5659-4ce3-8904-03757f798194
 
 
 
